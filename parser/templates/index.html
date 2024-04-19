@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+        <title>Timeero Mileage Parser</title>
+    </head>
+
+    <body>
+
+        <div class="main">
+            <h2>Paste mileage from Timeero here:</h2>
+            <form action="" method="post">
+                <textarea name="user_input" rows="25" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Export to MS Excel">
+            </form>
+            <br>
+            <h3>CAUTION:</h3>
+            <p>Check final spreadsheet to make sure all mileage entries are correct, before accepting.</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+form {
+    text-align: center;
+}
+
+div.main {
+    margin: 50px;
+}
