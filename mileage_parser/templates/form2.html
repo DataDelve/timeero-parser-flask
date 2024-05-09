@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+        <title>Timeero Mileage Parser</title>
+    </head>
+
+    <body>
+
+        <div class="main">
+            <!-- Fix Python code for output type below -->
+            <h2>Choose output type:</h2>
+            <input type="radio" id="raw" name="output_type" value="raw">
+            <label for="raw">Raw Data</label>
+            <input type="radio" id="final" name="output_type" value="final">
+            <label for="final">Final Spreadsheet</label><br>
+            <h2>Paste mileage from Timeero here:</h2>
+            <form action="" method="post">
+                <textarea name="user_input" rows="25" cols="50"></textarea>
+                <br>
+                <!-- If user did not make a selection on radio buttons, display an error -->
+                <input type="submit" value="Export to MS Excel">
+            </form>
+            <br>
+            <!-- Change CSS to make h3 a class, ie. div class="red_text" -->
+            <h3>CAUTION:</h3>
+            <p>Check final spreadsheet to make sure all mileage entries are correct, before accepting.</p>
+        </div>
+
+    </body>
+</html>
